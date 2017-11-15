@@ -28,9 +28,9 @@ if type == "a"
 elsif type == "b"
   #BASIC CALCULATOR
   puts 'You have chosen the basic calculator. Here you can add, subtract, multiply and divide. Firstly, input your first number:'
-  n1 = gets.chomp.to_i
+  n1 = gets.chomp.to_f
   puts "Now choose your second number:"
-  n2 = gets.chomp.to_i
+  n2 = gets.chomp.to_f
   puts "Choose which operator you would like to use a(d)d, (s)ubtract, (m)ultiply or di(v)ide?"
   opB = gets.chomp
     if opB == "d"
@@ -56,9 +56,9 @@ elsif type == "c"
   sys = gets.chomp
   if sys == "m"
     puts "You chosen to use the metric system, a wise choice. Please input you weight in kilograms"
-    weight = gets.chomp.to_i
+    weight = gets.chomp.to_f
     puts "Please input your Height in metres"
-    height = gets.chomp.to_i
+    height = gets.chomp.to_f
     bmi = (weight / ( height * height ))
     puts bmi
   elsif sys == "i"

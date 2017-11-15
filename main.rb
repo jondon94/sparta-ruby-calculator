@@ -55,14 +55,19 @@ elsif type == "c"
   puts 'Indicate which system you would like to use, (m)etric or (i)mperial'
   sys = gets.chomp
   if sys == "m"
-    puts "You chosen to use the metric system, a wise choice. Please input you weight in kilograms"
+    puts "You chosen to use the metric system, a wise choice. Please input your weight in kilograms"
     weight = gets.chomp.to_f
     puts "Please input your Height in metres"
     height = gets.chomp.to_f
     bmi = (weight / ( height * height ))
     puts bmi
   elsif sys == "i"
-    puts "You have chosen to use the imperial system"
+    puts "You have chosen to use the imperial system. Please input your weight in pounds"
+    weight = gets.chomp.to_f
+    puts "Please input your height in inches"
+    height = gets.chomp.to_f
+    bmi = (weight / ( height * height ))*703
+    puts bmi
   end
 else
   puts "I'm sorry " + name + " please try again."

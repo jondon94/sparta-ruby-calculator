@@ -5,7 +5,6 @@ name = gets.chomp
 puts "Hello " + name + ", Which calculator would you like to use? (a)dvanced, (b)asic or (c)BMI?"
 type = gets.chomp
 
-# binding.pry
 if type == "a"
   #ADVANCED CALCULATOR
   puts 'You have chosen the advanced calculator. Here you can use exponents or root ooperators'
